@@ -4,11 +4,7 @@ import { useDispatch } from 'react-redux'
 import { addToCart } from '../../store/slices/cartSlice'
 import './ProductDetail.css'
 
-/**
- * ProductDetail component
- * Fetches and displays detailed information about a selected product
- * Uses route parameters to get product ID
- */
+// product detail component
 function ProductDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
