@@ -21,10 +21,13 @@ const cartSlice = createSlice({
         state.items.push({ ...action.payload, quantity: 1 })
       }
     },
-    // Remove item from cart completely
+
+    // Remove item from cart completely (fixed to avoid deleting all items)
     removeFromCart: (state, action) => {
-      state.items = state.items.filter((item) => item.id !== action.payload)
+      const id = Number(action.payload)   // ⭐ Fix: makes sure ID matches type
+      state.items = state.items.filter((item) => item.id !== id)
     },
+
     // Update quantity of an item (ensures minimum quantity of 1)
     updateQuantity: (state, action) => {
       const { id, quantity } = action.payload
@@ -33,6 +36,7 @@ const cartSlice = createSlice({
         item.quantity = Math.max(1, quantity)
       }
     },
+
     // Clear all items from cart
     clearCart: (state) => {
       state.items = []
@@ -43,4 +47,3 @@ const cartSlice = createSlice({
 export const { addToCart, removeFromCart, updateQuantity, clearCart } =
   cartSlice.actions
 export default cartSlice.reducer
-
