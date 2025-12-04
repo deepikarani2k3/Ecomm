@@ -25,7 +25,7 @@ A modern e-commerce application built with React, Vite, Redux, and React Router.
 | React 18 | UI Library |
 | Vite | Build Tool |
 | React Router DOM | Routing + dynamic paths |
-| Redux Toolkit | React Router v6 |
+|  React Router v6 | Route matching|
 | CSS | Styling |
 | JavaScript (ES6+) | Logic & components |
 
