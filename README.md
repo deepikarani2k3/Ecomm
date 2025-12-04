@@ -11,28 +11,43 @@ A modern e-commerce application built with React, Vite, Redux, and React Router.
 - Responsive design
 - Lazy loading and code splitting for optimal performance
 
-## Installation
+### 🎨 Styling
+- Fully responsive  
+- Styled using **CSS **  
+- Smooth card hover effects and clean layout
 
-1. Install dependencies:
-```bash
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| React 18 | UI Library |
+| Vite | Build Tool |
+| React Router DOM | Routing + dynamic paths |
+| Redux Toolkit | React Router v6 |
+| CSS | Styling |
+| JavaScript (ES6+) | Logic & components |
+
+---
+
+
+---
+
+## ▶️ Run Locally
+
+### 1. Install dependencies
+```sh
 npm install
 ```
 
-2. Start development server:
+###  Start the App
 ```bash
+cd my-library
 npm run dev
 ```
 
-3. Build for production:
-```bash
-npm run build
-```
 
-## Tech Stack
-
-- React 18
-- Vite
-- Redux Toolkit
-- React Router v6
-- CSS3
+## GitHub Repository
+[Click here to view the repository](https://github.com/deepikarani2k3/Ecomm#)
 
